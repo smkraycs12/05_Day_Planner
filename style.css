@@ -1,0 +1,134 @@
+body {
+  background-image: url('./images/background.jpg');
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8em;
+  vertical-align: middle;
+}
+
+
+/*  need to make box fit space */
+input {
+  background: transparent;
+  border: none;
+  padding-left: 3px;
+}
+
+
+.jumbotron {
+  background-color:black;  
+  color: white;  
+  border-bottom: solid;
+  border-bottom-color: blue;
+  width: 100%;
+  text-align: center;
+}
+
+#title {
+  padding: 0px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+#instructions {
+  padding: 2px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+} 
+
+#currentDate {
+  padding: 2px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.col-md-1, .col-md-2, .col-md-9 {
+  padding: 0;
+}
+
+/* #planner */
+#plannerContainer {
+
+  background-color: lightblue;  
+  margin-top: 20px;
+  margin-bottom: 80px;
+  padding: 40px;
+} 
+
+.plannerRow {
+  height: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 1em;
+  line-height: 1.5;
+  border-radius: 15px;
+}
+
+.timeBox {
+  background-color: red;  
+  color: black;
+  height:100%;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px 0px 0px 15px;
+  display: inline-block;
+  font-size: 1.75rem;
+}
+
+.dailyPlan {
+  color: black;  
+  font-size: 12pt;
+  height:100%;
+  width: 100%;
+}
+
+.saveIcon {
+  background-color: blue;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+
+.header-text {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  color: black; 
+}
+
+/* media query for screen size to be applied to center text to switch at same time as navbar */
+@media (max-width: 768px) {
+  .container-fluid {
+    /* removes paddding on either side */
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .plannerRow {
+    height: 100%;
+    border-radius: 10;
+    margin: 10px;
+  }
+
+  .saveIcon { border-radius: 0 0 15px 15px; }
+
+  .timeBox { border-radius: 15px 15px 0 0; }
+}
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+.shadowPulse {
+  animation: shadow-pulse 1s infinite;
+}
